@@ -1,0 +1,32 @@
+# Python Environment Setup and Requirements
+# ----------------------------------------
+
+# First, create and activate a virtual environment:
+# On Windows:
+# python -m venv venv
+# .\venv\Scripts\activate
+#
+# On Linux/Mac:
+# python3 -m venv venv
+# source venv/bin/activate
+
+# After activating the virtual environment, install the required packages:
+# pip install -r requirements.txt
+
+# Required Packages
+python-docx>=3.0.0
+docxcompose>=1.4.0
+docxtpl>=0.16.7
+tabulate>=0.9.0
+html2docx>=1.6.0
+
+# Optional but recommended for development
+black>=23.0.0  # For code formatting
+pylint>=2.17.0  # For code linting
+
+# Note: Some packages like xml.etree.ElementTree are part of Python's standard library 
+# and don't need to be installed separately.
+
+# Usage:
+# After installing requirements, run:
+# python parser.py <path_to_burp_suite_xml_export>
